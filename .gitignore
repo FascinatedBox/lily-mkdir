@@ -1,6 +1,6 @@
 # Binary junk
 
-mkdir.so
+src/mkdir.so
 
 # CMake-related stuff.
 CMakeFiles
