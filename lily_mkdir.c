@@ -13,7 +13,7 @@ error handling.
 # include <sys/stat.h>
 #endif
 
-#include "lily_api_value.h"
+#include "lily.h"
 
 /** Begin autogen section. **/
 const char *lily_mkdir_table[] = {
