@@ -1,0 +1,7 @@
+{
+    "version": "v1.0.0",
+    "summary": "Wrapper allowing directory creation. For parsekit. Temporary.",
+    "source": "https://github.com/FascinatedBox/lily-mkdir",
+    "license": "MIT",
+    "native": false
+}
