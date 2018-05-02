@@ -16,20 +16,17 @@ error handling.
 #include "lily.h"
 
 /** Begin autogen section. **/
-const char *lily_mkdir_table[] = {
+const char *lily_mkdir_info_table[] = {
     "\0\0"
     ,"F\0mkdir\0(String,*Integer)"
     ,"Z"
 };
 #define toplevel_OFFSET 1
 void lily_mkdir__mkdir(lily_state *);
-void *lily_mkdir_loader(lily_state *s, int id)
-{
-    switch (id) {
-        case toplevel_OFFSET + 0: return lily_mkdir__mkdir;
-        default: return NULL;
-    }
-}
+void (*lily_mkdir_call_table[])(lily_state *s) = {
+    NULL,
+    lily_mkdir__mkdir,
+};
 /** End autogen section. **/
 
 /**
