@@ -21,9 +21,8 @@ const char *lily_mkdir_info_table[] = {
     ,"F\0mkdir\0(String,*Integer)"
     ,"Z"
 };
-#define toplevel_OFFSET 1
 void lily_mkdir__mkdir(lily_state *);
-void (*lily_mkdir_call_table[])(lily_state *s) = {
+lily_call_entry_func lily_mkdir_call_table[] = {
     NULL,
     lily_mkdir__mkdir,
 };
